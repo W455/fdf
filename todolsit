@@ -1,0 +1,95 @@
+                   -------------------     
+                  |    FDF  ROADMAP   |
+                   -------------------
+_______________________________________________________________
+                 / Parsing | Checking \
+o> utilisation de gnl pour lire les lignes --> OK
+
+_______________________________________________________________
+                 /      Storage        \ 
+
+o> comment stocker les donnees. Tab ou Lst?  --> Tab
+
+o>  1/ lire tout et recup le nombres de lignes
+    2/ creer une struct  s_point pour stocker chaque point
+    3/ creer un tab de s_point pour chaque point a chque appel
+        de gnl
+        on peut stocker aussi la couleur ds la struct
+
+o> checking and storage DONE
+
+_______________________________________________________________
+                 /  Image construction  \
+
+o> utilisation de mlx_new_image pour creer une image et mlx_get_data_addr pour
+    recup son addres et la traiter comme un char * --> OK
+
+o> fonction fill_pixels pour ecrire un pixel ou on veut dans l'image.
+    couleur obtenue avec get_color_rgb --> OK
+
+_______________________________________________________________
+                 /       Bresenham      \
+
+_______________________________________________________________
+                 /      Mise en 3D      \
+
+_______________________________________________________________
+                 /       Display         \
+
+
+_______________________________________________________________
+                /         Bonus           \
+
+_______________________________________________________________
+|*************************************************************|
+_______________________________________________________________
+
+Plan
+
+1/ Faire mumuse ac minilbx // Done
+
+2/ Apprendre a construire des images // WIP
+
+3/ Apprendre a constuire des segments selon un algo
+
+4/ Recup l'input et la formater // DONE
+
+5/ Afficher le fdf
+
+_______________________________________________________________
+|*************************************************************|
+_______________________________________________________________
+
+Keycode             Mouse
+
+Esc     53          Left   C      1
+                    Right  C      2
+Up      126         Mid    C      3                    
+Down    125         Up   Mol      4   
+Left    123         Down Mol      5  
+Right   124                         
+W       13                          
+A       0                           
+S       1                           
+D       2                           
+
+Return  36
+Enter   76
+Ctrl    256
+Meta    259
+Space   49
+F1      279
+Del     51
+Tab     48
+Shift   257
+
+_______________________________________________________________
+_______________________________________________________________
+
+Pour l'algo de trace de segment, cf Bresenham
+
+Pour la representation 3d, cf parallalax et isometrie
+
+Pour la translation, decaler d'un offset dans limage pourrait etre cool
+
+Nenuit
